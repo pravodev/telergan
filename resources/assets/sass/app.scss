@@ -1,0 +1,178 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.Chat {
+  /* width: 70vw; */
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+}
+.Chat__pane {
+  width: 230px;
+  background: black;
+  padding: 20px 30px;
+}
+.Chat__pane.Chat__pane--left {
+  background: #1e232d;
+  color: white;
+  box-shadow: 5px 0px 5px #0000006b;
+}
+.Chat__inbox {
+  background: #262c35;
+  width: 300px;
+  flex: 1;
+  color: white;
+}
+.Chat__box {
+  background: #f1f5f9;
+  flex: 2;
+  display: flex;
+  flex-direction: column
+}
+.Chat__box--header {
+  background: linear-gradient(to top right,#d5dae6,#f1f5f9);
+  width: 100%;
+  height: 72px;
+  box-shadow: 0 0 5px #00000063;
+  z-index: 2;
+}
+.Chat__box--body {
+  background: linear-gradient(#f1f5f9, #d5dae6);
+  flex: 1;
+}
+.Chat__box--footer {
+  background: #f0f2f5;
+  height: 70px;
+  box-shadow: 0 0 5px #0000005e;
+  display: flex;
+  align-items: center;
+}
+.Chat__pane.Chat__pane--right {
+  background: white;
+  box-shadow: 0 0 5px #00000070;
+  z-index: 3;
+}
+.SearchBox {
+  background: #272d34;
+  padding: 20px;
+  box-shadow: 0 0 5px #0000005e;
+}
+input.SearchBox__input {
+  width: 100%;
+  border: 0;
+  padding: 5px;
+  background: #474e58;
+  color: white;
+  border-radius: 4px 0;
+
+}
+.Message {
+  padding: 2px;
+  border-bottom: 1px solid #323a46;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  justify-content: center;
+}
+.Message.Message--active {
+  border-left: 3px solid #294e86;
+}
+.Message__body {
+  margin-left: 12px;
+  width: 170px;
+}
+.Body__text {
+  color: #a5a0a0;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.Message__photos {
+  width: 50px;
+  height: 50px;
+}
+.Message__photos img {
+  height: 50px;
+  border-radius: 50%
+}
+.Menu__ellipsis {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4px;
+}
+.Item.Item__content {
+  padding: 12px 0;
+  color: #a19c9c;
+}
+.Item.Item__content ul {
+  list-style: none;
+  padding: 0;
+}
+.Item.Item__content li {
+  position: relative;
+  padding: 5px;
+}
+.Item.Item__content li:hover {
+  background: #424a5a;
+  color: white;
+  border-radius: 4px 0;
+}
+span.Item__count {
+  position: absolute;
+  right: 12px;
+  color: white;
+}
+.Item.Item__content:after {
+  content: "";
+  width: 100%;
+  box-shadow: 0 0 5px #000000a3;
+  height: 1px;
+  background: #585656;
+  display: block;
+}
+.Item.Item__content:last-child:after {
+  content: none;
+}
+.Message__input {
+  flex: 6;
+}
+.Message__input .input-msg {
+  border: 0;
+  height: 70px;
+  padding: 12px;
+  width: 100%;
+  background: none;
+}
+.Message__button {
+  text-align: center;
+  flex: 1;
+}
+.Message__button .button-msg {
+  background: #1e232d;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 22px;
+}
+
+
+@import 'registerform';
+

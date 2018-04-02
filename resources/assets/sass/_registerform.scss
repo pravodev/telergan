@@ -1,0 +1,51 @@
+.Background {
+    background: #1f212c;
+    height: 250px;
+}
+.Register__container {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Box {
+    width: 360px;
+}
+.Register__header {
+    color: white;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.App__logo span {
+    background: white;
+    padding: 4px;
+    width: 30px;
+    border-radius: 50%;
+    color: #1f212c;
+    font-size: 15px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+}
+.Register__form {
+    background: white;
+    padding: 34px;
+    box-shadow: 0 0 5px black;
+}
+.Box input {
+    border: none;
+    border-bottom: 1px solid #cac6c6;
+    border-radius: 0;
+    margin: 14px;
+    padding: 12px;
+    width: calc(100% - 34px);
+}
+.Register__footer {
+    font-size: 13px;
+    color: #887b7b;
+    margin-top: 12px;
+}
