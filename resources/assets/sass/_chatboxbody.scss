@@ -1,0 +1,54 @@
+.Chat__box--body {
+    background: linear-gradient(#f1f5f9, #d5dae6);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto
+}
+.TextMessage {
+    padding: 15px;
+    margin: 13px;
+    box-shadow: 0 2px 5px #0000004a;
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 0 7px;
+}
+.TextMessage__name {
+    background: black;
+    color: white;
+    position: absolute;
+    right: 0;
+    padding: 5px;
+    border-radius: 4px 0;
+    min-width: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+.TextMessage.sender {
+    background: #0183ff;
+    color: white;
+}
+.TextMessage.sender .TextMessage__name {
+    background: white;
+    border: 1px solid #0183ff;
+    color: black;
+}
+.TextMessage.receiver {
+    background: white;
+}
+.TextMessage.receiver .TextMessage__name {
+    background: #0183ff;
+    border: 1px solid white;
+    left: 0;
+    right: auto;
+}
+.TextMessage__body {
+    word-wrap: break-word;
+    width: 480px;
+}
+.on-typing {
+    width: 75px;
+    background: white;
+    margin: 10px;
+    padding: 12px;
+}

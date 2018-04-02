@@ -68,12 +68,20 @@
                 <div class="Chat__box--header">
 
                 </div>
-                <div class="Chat__box--body">
-
+                <div class="Chat__box--body" v-chat-scroll>
+                    <textmessage
+                        v-for="value,index in chat.message"
+                        :key=value.index
+                        :type=chat.type[index]
+                        :user=chat.user[index]
+                    >
+                        @{{ value }}
+                    </textmessage>
+                    <span class="on-typing" v-if="typing !== ''">@{{ typing }}</span>
                 </div>
                 <div class="Chat__box--footer">
                     <div class="Message__input">
-                        <input type="text" class="input-msg" placeholder="Type Your Message.." name="" id="">
+                        <input v-model="message" @keyup.enter='send' type="text" class="input-msg" placeholder="Type Your Message.." name="" id="">
                     </div>
                     <div class="Message__button">
                         <button class="button-msg"><i class="fas fa-comment"></i></button>

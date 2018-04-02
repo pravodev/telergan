@@ -10052,6 +10052,78 @@ a.text-dark:focus {
           flex-direction: column;
 }
 
+.Chat__box--body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1f5f9), to(#d5dae6));
+  background: linear-gradient(#f1f5f9, #d5dae6);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+}
+
+.TextMessage {
+  padding: 15px;
+  margin: 13px;
+  -webkit-box-shadow: 0 2px 5px #0000004a;
+          box-shadow: 0 2px 5px #0000004a;
+  position: relative;
+  margin-bottom: 25px;
+  border-radius: 0 7px;
+}
+
+.TextMessage__name {
+  background: black;
+  color: white;
+  position: absolute;
+  right: 0;
+  padding: 5px;
+  border-radius: 4px 0;
+  min-width: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.TextMessage.sender {
+  background: #0183ff;
+  color: white;
+}
+
+.TextMessage.sender .TextMessage__name {
+  background: white;
+  border: 1px solid #0183ff;
+  color: black;
+}
+
+.TextMessage.receiver {
+  background: white;
+}
+
+.TextMessage.receiver .TextMessage__name {
+  background: #0183ff;
+  border: 1px solid white;
+  left: 0;
+  right: auto;
+}
+
+.TextMessage__body {
+  word-wrap: break-word;
+  width: 480px;
+}
+
+.on-typing {
+  width: 75px;
+  background: white;
+  margin: 10px;
+  padding: 12px;
+}
+
 .Chat__box--header {
   background: -webkit-gradient(linear, left bottom, right top, from(#d5dae6), to(#f1f5f9));
   background: linear-gradient(to top right, #d5dae6, #f1f5f9);
@@ -10060,14 +10132,6 @@ a.text-dark:focus {
   -webkit-box-shadow: 0 0 5px #00000063;
           box-shadow: 0 0 5px #00000063;
   z-index: 2;
-}
-
-.Chat__box--body {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f1f5f9), to(#d5dae6));
-  background: linear-gradient(#f1f5f9, #d5dae6);
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
 .Chat__box--footer {

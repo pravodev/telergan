@@ -12,7 +12,11 @@
 */
 
 Route::get('/', 'ChatController@chat');
-Route::get('/send', 'ChatController@send');
+Route::post('/send', 'ChatController@send');
+Route::get('/t', function(){
+    $user = App\User::find(Auth::id());
+    return dd($user->name);
+});
 
 Auth::routes();
 
